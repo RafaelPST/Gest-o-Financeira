@@ -8,7 +8,7 @@ public class Categoria {
         this.tipo = tipo;
     }
 
-    // Métodos Getters e Setters
+    // Métodos
     public String getNome() {
         return nome;
     }
@@ -25,9 +25,9 @@ public class Categoria {
         this.tipo = tipo;
     }
 
-    // Sobrescreve o metodo toString para exibir o nome da categoria
+    // Exibir o nome da categoria
     @Override
     public String toString() {
-        return nome; // Retorna o nome da categoria para exibição
+        return nome; // Exibe o nome da Categoria
     }
 }
