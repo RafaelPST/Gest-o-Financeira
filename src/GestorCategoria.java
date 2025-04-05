@@ -8,8 +8,13 @@ public class GestorCategoria {
         this.categorias = new ArrayList<>();
     }
 
-    // Listar Categorias
-    public List<Categoria> listarCategorias() {
+    public List<Categoria> listarCategorias() {               // Lista categoria              
         return categorias;
+    }
+    
+    public void adicionarCategoria(String nome, TipoCategoria tipo) {           
+        Categoria categoria = new Categoria(nome, tipo);                          // Adiciona categoria nova
+        categorias.add(categoria);                                                    
+        System.out.println("Categoria '" + nome + "' adicionada com sucesso!");
     }
 }
