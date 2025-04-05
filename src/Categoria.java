@@ -28,6 +28,6 @@ public class Categoria {
     // Exibir o nome da categoria
     @Override
     public String toString() {
-        return nome; // Exibe o nome da Categoria
+        return nome; 
     }
 }
