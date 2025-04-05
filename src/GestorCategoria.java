@@ -21,4 +21,9 @@ public class GestorCategoria {
     public void removerCategoria(String nome) {
         categorias.removeIf(categoria -> categoria.getNome().equals(nome));         // Remove uma categoria
     }
+
+    public List<Categoria> listarCategorias() {
+    return categorias;                                                           // Lista as Categorias
+    }
+
 }
