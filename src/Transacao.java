@@ -1,62 +1,31 @@
+import java.util.Date;
+
 public class Transacao {
-    //atributos
-    private String data;
-    private String descricao;
-    private Float valor;
-    private String tipo;
+    private double valor;
     private Categoria categoria;
-    private Usuario usuario;
+    private Date data;
+    private String descricao;
 
-    //construtores
-    public Transacao(String data, String descricao, Float valor, String tipo){
-        this.data = data;
-        this.descricao = descricao;
+    public Transacao(double valor, Categoria categoria, Date data, String descricao) {
         this.valor = valor;
-        this.tipo = tipo;
-    }
-    public Transacao(){
-
-    }
-
-    public String getData(){
-        return data;
-    }
-    public void setData(String data) {
+        this.categoria = categoria;
         this.data = data;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-    public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 
-    public Float getValor() {
+    public double getValor() {
         return valor;
-    }
-    public void setValor(Float valor) {
-        this.valor = valor;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
     }
 
     public Categoria getCategoria() {
         return categoria;
     }
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
+
+    public Date getData() {
+        return data;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public String getDescricao() {
+        return descricao;
     }
 }
