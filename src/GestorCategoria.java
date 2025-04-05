@@ -34,5 +34,6 @@ public class GestorCategoria {
             break;
             }
         }
+        System.out.println("Categoria não encontrada: " + nomeAntigo);
     }
 }
