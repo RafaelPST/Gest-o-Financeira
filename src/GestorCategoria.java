@@ -26,4 +26,13 @@ public class GestorCategoria {
     return categorias;                                                           // Lista as Categorias
     }
 
+    public void editarCategoria(String nomeAntigo, String nomeNovo, TipoCategoria tipoNovo) {
+    for (Categoria categoria : categorias) {
+        if (categoria.getNome().equals(nomeAntigo)) {
+            categoria.setNome(nomeNovo);                    // Editar uma categoria
+            categoria.setTipo(tipoNovo);
+            break;
+            }
+        }
+    }
 }
