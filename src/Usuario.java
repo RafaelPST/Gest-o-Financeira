@@ -48,6 +48,7 @@ public class Usuario {
     }
     public void visualizarResumo(){
         System.out.println("Resumo de Transações: \n");
+        // Aqui, poderíamos exibir o histórico de transações desse usuário.
     }
 }
 
