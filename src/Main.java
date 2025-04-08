@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        // Criação do gestor de usuários e transações
+        // cria o gestor de usuários e transações
         GestorUsuarios gestorUsuarios = new GestorUsuarios();
         GestorTransacoes gestorTransacoes = new GestorTransacoes();
         GestorCategoria gestorCategoria = new GestorCategoria();
 
-        // Adicionar o usuário administrador (se não existir)
+        // Adicionar o usuário admin (se não existir)
         gestorUsuarios.registrarUsuario("adm", "Admin4123", "Administrador");
 
-        // Exibir a tela de login
+        // tela de login
         CadastroLoginGUI loginGUI = new CadastroLoginGUI(gestorUsuarios);
         loginGUI.exibir();  // Exibe a tela de login
 
-        // Após o login bem-sucedido, o redirecionamento para o MenuPrincipalGUI será feito na classe CadastroLoginGUI
+        // se  o login for bem-sucedido sera o redirecionado para o MenuPrincipalGUI onde será feito na classe CadastroLoginGUI
     }
 }
